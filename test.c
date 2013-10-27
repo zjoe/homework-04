@@ -14,7 +14,7 @@ struct Go
 	int y;
 };
 struct Node queue[MAXTREESIZE];
-struct Go Pos[8] = {
+struct Go pos[8] = {
 {0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1},{-1,0},{-1,-1}
 };
 char words[MAXNUM][MAXLEN],matrix[100][100];
@@ -46,19 +46,23 @@ int insertnode(int flag,char s[])
 			return -1;
 		cid = queue[id].p[ctoint(s[i])];
 		if (cid == -1)
+			{
 			cid = newnode();
+			queue[id].p[ctoint(s[i])] = cid;
+			}
 		id = cid;
 		}
 	queue[id].flag = flag;
 	return id;
 }
 
-int searchnode( char s[])
+int searchnode(int x,int y, int p)
 {
-	int i,id = 0,cid;
-	for(i=0;i<strlen(s)-1;i++)
+	int id = 0,cid;
+	for(;x>=0&&y>=0&&x<n&&y<m; x+=pos[p].x,y+=pos[p].y)
 		{
-		cid = queue[id].p[ctoint(s[i])];
+	//	printf("%x\n",ctoint(matrix[x][y]));
+		cid = queue[id].p[ctoint(matrix[x][y])];
 		if (cid == -1)
 			return -1;
 		id = cid;
@@ -71,7 +75,7 @@ int main(void)
 {
 	int i,j;
 	freopen("input.txt","r",stdin);
-	scanf("%d",&numw);
+	scanf("%d\n",&numw);
 	newnode();
 	for(i = 0; i<numw;i++)
 		{
@@ -82,6 +86,9 @@ int main(void)
 		}
 	while(fgets(matrix[n],100,stdin)>0)
 		n += 1;
-	m = strlen(matrix[0]);
+	m = strlen(matrix[0])-1;
 	//printf("%d %d",numnode,numw);
+	//printf("%d\n%d\n",searchnode(0,0,0),searchnode(2,0,1));
+	//for(i=0;i<26;i++)printf("%d ",queue[0].p[i]);
 }
+
