@@ -17,6 +17,13 @@ struct Node queue[MAXTREESIZE];
 struct Go pos[8] = {
 {0,1},{1,1},{1,0},{1,-1},{0,-1},{-1,-1},{-1,0},{-1,-1}
 };
+/*
+ * 0 is right
+ * 1 is right down
+ * 2 is down
+ * 3 is ... you know
+ * it is deasil(顺时针)
+ */
 char words[MAXNUM][MAXLEN],matrix[100][100];
 int numw,n,m,numnode;
 
