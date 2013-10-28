@@ -15,6 +15,7 @@ new			:new.c的可执行文件(under linux)
 ##new.c使用方法
 
 >gcc new.c -o new
+
 >./new 18 18 #生成18\*18的结果矩阵（有很小的几率出错）
 
 目前可以生成的最优矩阵为18\*18
@@ -39,7 +40,7 @@ new			:new.c的可执行文件(under linux)
 	GIGABYTECEEJL EETW
 	FIREWIRE  ERAWDRAH
 
-test  result from my test.c
+	test  result from my test.c
 
 	STATE1:	is good!
 	K   M X-U-N-I-L             O F-A-Q 
