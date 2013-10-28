@@ -1,10 +1,15 @@
-##WordSearch生成，验证工具
+##WordsSearch生成，验证工具
 
 new.c		:读入words.txt 生成 result.txt 
+
 test.c		:读入（默认读入sample.txt 需要指定参数伟result.txt） 屏幕生成测试结果说明
+
 words.txt	:第一行一个整数n，表示以下有n行单词
+
 result.txt	:new生成的结果，第一行一个整数n，以下n行单词，最后输出一个矩阵
+
 sample.txt	:老师网站上的例子
+
 new			:new.c的可执行文件(under linux)
 
 ##new.c使用方法
@@ -12,7 +17,7 @@ new			:new.c的可执行文件(under linux)
 >gcc new.c -o new
 >./new 18 18 #生成18\*18的结果矩阵（有很小的几率出错）
 
-目前可以生成的最优矩阵伟18\*18
+目前可以生成的最优矩阵为18\*18
 
 
 	K MXUNIL      OFAQ
@@ -36,7 +41,7 @@ new			:new.c的可执行文件(under linux)
 
 test  result from my test.c
 
-STATE1:	is good!
+	STATE1:	is good!
 	K   M X-U-N-I-L             O F-A-Q 
 	 \   \       /              | |     
 	  S P E Y-E-L-I-M-S-U-R-I-V P O U   
@@ -73,9 +78,9 @@ STATE1:	is good!
 	             /       \       \   \  
 	F-I-R-E-W-I-R-E     E-R-A-W-D-R-A-H 
 
-STATE2:	is good! n&m = 18
+	STATE2:	is good! n&m = 18
 
-STATE3:	is good!
+	STATE3:	is good!
 
 
 ##test.c使用方法
