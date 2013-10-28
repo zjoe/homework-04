@@ -101,7 +101,7 @@ int testallword()
 	for(i=0;i<numw;i++)
 		{
 		//printf("%d\n",boo[i]);
-		if (boo[i]!=1)
+		if (boo[i]==0)
 			return -1;
 		}
 	return 0;
@@ -167,7 +167,7 @@ int main(int argc,char *argv[])
 	{
 		freopen("sample.txt","r",stdin);
 	}
-	if (argc ==2)
+	if (argc >=2)
 	{
 		if(freopen(argv[1],"r",stdin)==NULL)
 			{
@@ -177,8 +177,7 @@ int main(int argc,char *argv[])
 	}
 	if (argc >=3)
 	{
-		printf("argument is too long!\n");
-		return -1;
+		freopen(argv[2],"w",stdout);
 	}
 
 	scanf("%d\n",&numw);

@@ -1,0 +1,26 @@
+STATE1:	is good!
+	T-E-E-M P B-R-O-S-B-A 
+	  |\    |       |     
+	S Q T   R-E-S-R-U-N   
+	| | |\  |  /    |     
+	C U H A O A D-I-N-A-R 
+	| | | |\|/      |     
+	R I A T G A-B-O-U-N-D 
+	| | | | |\      |     
+	Y P N O R-E-V-E-R-O-F 
+	    | | |  \    |     
+	F   K P A O L-U-P-U-S 
+	 \    | |  \ \      | 
+	  L   Y M N L E     E 
+	   \    |  \ \ \    | 
+	S-P-E-C-I-E I L M   N 
+	     \  |    \ \ \  | 
+	W-O-R-D-N-A-P-X-E I O 
+	       \|        \  | 
+	R-U-O-Y G   M-U-C-H J 
+	         \            
+	  E-L-U-T-E B-O-L-L   
+
+STATE2:	is good! n&m = 11
+
+STATE3:	is good!
