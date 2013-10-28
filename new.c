@@ -1,32 +1,63 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#define MAXNUM 100
+#define MAXLEN 26
+#define MAXMAT 100
+#define MAXRANDOM 100000
 int dx[8]={-1,-1,0,1,1,1,0,-1};
 int dy[8]={0,1,1,1,0,-1,-1,-1};
-int board[100][100];
-char words[100][26];
+int board[MAXMAT][MAXMAT];
+char words[MAXNUM][MAXLEN];
 int N,M;
-FILE *fin;
+FILE *fin,*fout;
 void work(int n);
 int randpos(char *word, int *posx, int *posy, int *posd);
 int howgood(char *word, int x, int y, int drct);
 void placeword(char *word, int x, int y, int drct);
+void swap(char a[],char b[]);
 int main(int argc,char *argv[])
 {
 	int n,i,j;
-	fin=fopen("data.txt","r");
+	fin=fopen("words.txt","r");
+	fout=fopen("result.txt","w");
 	fscanf(fin,"%d",&n);
-	for(i=1;i<=n;i++)fscanf(fin,"%s",words[i]);
+	fprintf(fout,"%d\n",n);
+	for(i=1;i<=n;i++)
+	{
+		fscanf(fin,"%s",words[i]);
+		fprintf(fout,"%s\n",words[i]);
+	}
+	for(i=1;i<=n;i++)
+		for(j=i+1;j<=n;j++)
+		if(strlen(words[i])<strlen(words[j]))	
+			swap(words[i],words[j]);
 	N=atoi(argv[1]);
 	M=atoi(argv[2]);
 	work(n);
+	
 	for(i=1;i<=N;i++)
 	{
 		for(j=1;j<=M;j++)
-			printf("%c ", board[i][j]);
+			{
+			printf("%c", board[i][j]);
+			fprintf(fout,"%c",board[i][j]);
+			}
 		printf("\n");
+		fprintf(fout,"\n");
 	}
 	return 0;
+}
+void swap(char a[],char b[])
+{
+	int i; 
+	char c;
+	for(i = 0;i<MAXLEN;i++)
+		{
+		c=a[i];
+		a[i]=b[i];
+		b[i]=c;
+		}
 }
 void work(int n)
 {
@@ -39,7 +70,7 @@ void work(int n)
 		if(can==-1)
 		{
 			printf("cannot!\n");
-			getchar();
+		//	getchar();
 		}
 		placeword(words[i],posx,posy,posd);
 	}
@@ -48,7 +79,7 @@ int randpos(char *word, int *posx, int *posy, int *posd)
 {
 	int max,i,x,y,d,temp;
 	max=-1;
-	for(i=1;i<=100000;i++)
+	for(i=1;i<=MAXRANDOM;i++)
 	{
 		x=rand()%N+1;
 		y=rand()%M+1;

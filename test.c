@@ -165,7 +165,7 @@ int main(int argc,char *argv[])
 	int i,j;
 	if (argc == 1)
 	{
-		freopen("input.txt","r",stdin);
+		freopen("sample.txt","r",stdin);
 	}
 	if (argc ==2)
 	{
