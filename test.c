@@ -32,6 +32,7 @@ struct Go pos[8] = {
  */
 char words[MAXNUM][MAXLEN],matrix[MAXMAT][MAXMAT],out[MAXMAT*2][MAXMAT*2];
 int numw,n,m,numnode,boo[MAXNUM];
+
 int ctoint(char c)
 {
 	if (c >= 'a' && c<='z') return c-'a';
