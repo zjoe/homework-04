@@ -31,8 +31,7 @@ struct Go pos[8] = {
  *
  */
 char words[MAXNUM][MAXLEN],matrix[MAXMAT][MAXMAT],out[MAXMAT*2][MAXMAT*2];
-int numw,n,m,numnode;
-
+int numw,n,m,numnode,boo[MAXNUM];
 int ctoint(char c)
 {
 	if (c >= 'a' && c<='z') return c-'a';
@@ -86,7 +85,7 @@ int searchnode(int x,int y, int p)
 
 int testallword()
 {
-	int i,j,p,count = 0,k,boo[MAXNUM]={0};
+	int i,j,p,k;
 	for(i=0;i<n;i++)
 		for(j=0;j<m;j++)	
 			for(p=0;p<8;p++)
@@ -95,17 +94,15 @@ int testallword()
 				if (k != -1)
 					{
 					//printf("%d %d %c %d %s",i,j,matrix[i][j],p,words[k]);
-					if (boo[k] == 0)
-						{
-						boo[k] = 1;
-						count +=1;
-						}
-					else
-						return -1;
+					boo[k] += 1;
 					}
 			}
-	if (count != numw)
-		return -1;
+	for(i=0;i<numw;i++)
+		{
+		//printf("%d\n",boo[i]);
+		if (boo[i]!=1)
+			return -1;
+		}
 	return 0;
 }
 
@@ -146,7 +143,7 @@ void outans()
 					addtag(i,j,p,k);
 			}
 	for(i=0;i<n*2-1;i++)
-		printf("%s\n",out[i]);
+		printf("\t%s\n",out[i]);
 }
 
 int testcorner()
@@ -162,10 +159,28 @@ int testcorner()
 	return 0;
 }
 
-int main(void)
+int main(int argc,char *argv[])
 {
 	int i,j;
-	freopen("input.txt","r",stdin);
+	if (argc == 1)
+	{
+		printf("please input  <file name> to test\n");
+		return -1;
+	}
+	if (argc ==2)
+	{
+		if(freopen(argv[1],"r",stdin)==NULL)
+			{
+			printf("please input the corrent <file name>\n");
+			return -1;
+			}
+	}
+	if (argc >=3)
+	{
+		printf("argument is too long!\n");
+		return -1;
+	}
+
 	scanf("%d\n",&numw);
 	newnode();
 	for(i = 0; i<numw;i++)
@@ -174,26 +189,30 @@ int main(void)
 		if ((j = insertnode(i,words[i]))==-1)
 			return -1;
 		}
-	while(fgets(matrix[n],100,stdin)>0)
+	while(fgets(matrix[n],MAXMAT,stdin)>0)
 		n += 1; 
 	m = strlen(matrix[0])-1;
 
 	if(testallword()==0)
 		{
-		printf("STATE1: is good!\n");
+		printf("STATE1:\tis good!\n");
 		outans();
 		}
 	else
-		printf("STATE1: bad!\n");
+		{
+		printf("STATE1:\tbad!\n");
+		printf("\tYou leave the words belove(no used or used more than once):\n");
+		for(i=0;i<numw;i++)
+			if(boo[i]!=1)
+				printf("\tused times = %d , %s",boo[i],words[i]);
+		}
 	if(n==m)
-		printf("STATE2: is good! n&m = %d\n",n);
+		printf("\nSTATE2:\tis good! n&m = %d\n",n);
 	else 
-		printf("STATE2: bad! n=%d m=%d\n",n,m);
+		printf("\nSTATE2:\tbad! n=%d m=%d\n",n,m);
 	if(testcorner() == 0)
-		printf("STATE3: is good!\n");
+		printf("\nSTATE3:\tis good!\n");
 	else
-		printf("STATE3: bad!\n");
+		printf("\nSTATE3:\tbad!\n");
 	return 0;
 }
-
-
