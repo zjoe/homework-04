@@ -164,8 +164,7 @@ int main(int argc,char *argv[])
 	int i,j;
 	if (argc == 1)
 	{
-		printf("please input  <file name> to test\n");
-		return -1;
+		freopen("input.txt","r",stdin);
 	}
 	if (argc ==2)
 	{
