@@ -1,25 +1,25 @@
 STATE1:	is good!
-	N C H     B E-P-U-T-S 
-	|\|  \     \          
-	O U   E G   E-B-E-H-T 
-	| |\   /     \        
-	W R T-E-L-B-U-S-O-Y Y 
-	  |  /   \     \   /  
-	  L M T   L   F T O   
-	   / / \   \ /   /    
-	  M L D E P O   U I K 
-	 / /|  \ \|/ \ /   /  
-	A I A   R R B R   W R 
-	 /  |    \|/   \ /    
-	J   C   E O K-N-A-H-T 
-	    |  / /|\   / \    
-	E W S V L G F N   T   
-	| | |/ /  |  \        
-	L O E S   R Z F-I-E-F 
-	| |/|     |/   \    | 
-	A R M   N-A-M-B-A-C O 
-	| |       |         | 
-	G D H-C-U-M-O-C-H-A G 
+	M   A T-L-I-J   S W Y 
+	|    \          | |/  
+	U     F K-N-A-H-T O   
+	|      \ \      |/|   
+	C     S F W   L U R   
+	|\   /| |\ \ / /| |   
+	H U O U O O A R P D   
+	   /| | |  / \  |     
+	N Y R B G C R N E     
+	|\  |\|  /  |\ \      
+	O U A L S R E D Z N   
+	|  \| |/ / /|    \|   
+	W O T E I B V E-L-A-G 
+	  |  /|/ /  |    /| | 
+	S L M T E F E   H M E 
+	| |  / / /  |  /  | | 
+	L L S H E   R C   B M 
+	| |/ / / \  |/    | | 
+	O E T I P-R-O-G-R-A-M 
+	|/|  /     /|     | | 
+	B H F     M F     C A 
 
 STATE2:	is good! n&m = 11
 

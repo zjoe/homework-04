@@ -1,25 +1,25 @@
 STATE1:	is good!
-	E-C-A-E-P O-L-L-E-H E 
-	 \                  | 
-	S L     O S-C-R-A-P-S 
-	|  \   /|\   /      | 
-	I S Z N S B A     P A 
-	| |  \  |  /     /  | 
-	W P E Z M T L M R   E 
-	| |  \ \|/   \|/    | 
-	E R   T I-N-F-A-M-Y R 
-	| |    \|\   /|\    | 
-	L I I F U M W R T R U 
-	  |  \  |\   /| |\| | 
-	  G Y S M F O G H E O 
-	       \   \  | | | | 
-	M-U-C-H-A-F-E O A T Y 
-	|        \   \| | |   
-	U   O-S-T-L-E-R N N   
-	|          \  | | |   
-	M   Y-F-I-C-A-P K I   
-	             \    |   
-	K-I-N-G W-O-R-D   T   
+	H K N-U-D-I-T-Y X S G 
+	 \|              \  | 
+	K C S-Q-U-A-W   M E I 
+	| |\|          /   \| 
+	N A U   P D-R-O-W   R 
+	| | |\ /     /      | 
+	A L N M D R K   P N O 
+	|   |/  | |\   /| |   
+	H   U S N E O E R W B 
+	|  /| | | |  \  | |/  
+	T H P U I H S F O O   
+	    | | | |/    |/|   
+	R V Y N M T H   G S M 
+	| | | | |/| |  /| | | 
+	I I G U E A E G R I O 
+	| | | |/| | |/  | | | 
+	V E M R R B L   A D C 
+	|   | |    /|   |   | 
+	A   Y P   E-L-B-M-U-H 
+	|           |       | 
+	L T-I-H-W Y-O-U-R   A 
 
 STATE2:	is good! n&m = 11
 

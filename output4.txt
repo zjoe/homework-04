@@ -1,25 +1,25 @@
 STATE1:	is good!
-	P-R-O-G-R-A-M Y K H M 
-	|            / /  | | 
-	R     I T   F N   E U 
-	|     |  \ / /    | | 
-	A K-I-N-G I A O E L M 
-	|     |  / / /| | |   
-	W R-O-F C H N S S L L 
-	      |/ / / \| | | | 
-	O-B-L-A-T-E   T A O E 
-	 \   /|       |\|   | 
-	S S P M-I-Z-Z-L-E   W 
-	| |\  |       | |\  | 
-	P P M Y-O-U-R E R R I 
-	| |  \        | |   | 
-	R-A-T-I-F-Y   R U   S 
-	| |    \              
-	I R-E-F-U-T-E-F-A-H-C 
-	| |      \            
-	G C H-C-U-M E-C-A-E-P 
-	  |                   
-	I-S-A-L-A-D-R-O-W     
+	K-I-N-G M-A-R-G-O-R-P 
+	         \       /    
+	    S-P-R-I-G Y-O-U-R 
+	           \   /|  /| 
+	S-I-W-E-L   Z F S A E 
+	  |          \  |/  | 
+	M S-P-A-R-C-S Z T U T 
+	| | |    \     /| | | 
+	U A E   Y E   I L R N 
+	| | |\  |  \ /  |\| | 
+	C L A T M P F   E E I 
+	| | |  \|/ \ \  | | | 
+	H A C   A Y R U R A T 
+	| | |  /|\   \ \  | | 
+	A D E C F L D A T S H 
+	|    /  |  \ \ \ \| | 
+	F   I O-N-E B R W E A 
+	|  /    |    \ \    | 
+	E F M-U-I-M-S-O O   N 
+	 /               \  | 
+	Y M-U-M H-E-L-L-O W K 
 
 STATE2:	is good! n&m = 11
 
